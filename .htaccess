@@ -1,0 +1,9 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^api/restaurant/([^/]+)/?$ api.php?restaurant=$1 [L,QSA,D]
+RewriteRule ^api/restaurant/([^/]+)/([^/]+)/?$ api.php?restaurant=$1&daySelected=$2 [L,QSA,D]
+RewriteCond %{REQUEST_METHOD} DELETE
+RewriteRule ^api/restaurant/([^/]+)/?$ api.php [L,QSA]
