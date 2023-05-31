@@ -3,8 +3,11 @@
 ## Úloha
 
 (1) V okolí školy si nájdite troch rôznych poskytovateľov stravovacích služieb, ktorí predávajú obedové menu (napr. Delikanti poskytuje stravu aj na FEI STU a aj na PriF UK, keďže však ide o toho istého poskytovateľa, tak budeme uvažovať iba jednu z týchto dvoch prevádzok). Odporúčame vybrať si tiež zariadenia, ktorých menu sa dá programovo parsovať.
+
 (2) Na stránke na overenie vytvorených metód API umiestnite okrem iného aj 3 tlačidlá: "Stiahni", "Rozparsuj" a "Vymaž".
+
 (3) Po stlačení tlačidla "Stiahni" sa pomocou CURL-u z jednotlivých reštaurácií stiahnu stránky s aktuálnym menu a získané údaje sa uložia do databázy spolu s dátumom, keď sa menu stahovalo.
+
 (4) Po stlačení tlačidla "Rozparsuj" sa zoberie posledný záznam z predchádzajúceho bodu, stiahnuté údaje sa rozparsujú a rozparsované údaje sa tiež uložia do databázy. Neukladajte duplicitné údaje. Údaje, ktoré si je potrebné získať a uložiť sú:
 
 ponuka jedál,
